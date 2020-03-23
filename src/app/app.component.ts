@@ -12,19 +12,46 @@ export class AppComponent implements OnInit {
 
     title = 'SandBox';
     imgUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSzrAXk1k39T9k5i8Z81CYkBAMtZDIHMXptgXlLkY6a0L08Ixl';
-
+    todaysDate = new Date();
 
     ngOnInit(): void {
-
         // TOY PROBLEMS - Solve the problems below as effeciently as possible.
         // Not all problems can be solved with one line of code.
 
 
-        // HTTP DAY
-        const alphabet = [' ','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+        // TEMPLATE DRIVEN FORMS DAY
+        // 1. Go to https://swapi.co/ in the input type 'starships' and push the request button. Create an
+        // interface that holds all the properties of a starship.
 
-        // 1. Given the array of numbers below, console log the associated letters from above to make a sentense.
+        // 2. Referencing the planet.ts file, display the name of every planet that appeared in the 6th Star Wars film.
+
+        // 3. Given the evenOccurrnceArr variable below, find the first item that occurs an even number of times
+        // in an array. Remember to handle multiple even-occurrence items and return the first one. Return null
+        // if there are no even-occurrence items.
+        const evenOccurrnceArr = [ 1, 3, 3, 3, 2, 4, 4, 2, 5 , 7, 7];
+
+        // 4. Given the array of words below display if each word is a palindrome or not.
+        const palindrome = ['Kayak', 'steve', 'toyota', 'rotator', 'No lemon, no melon', 'potato', 'Solo'];
+
+        // 5. Add all the code necessary to get routing to work.
+
+
+        // HTTP DAY
+        const alphabet = [' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+            'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+
+        // 1. Given the array of numbers below, console log the associated letters from above to make a sentence.
         const numbers = [23, 5, 12, 3, 15, 13, 5, 0, 20, 15, 0, 3, 12, 1, 19, 19];
+        // for (let i = 0; i < numbers.length; i++) {
+        //     console.log(alphabet[numbers[i]]);
+        // }
+
+        // let str = '';
+        // for (let i = 0; i < numbers.length; i++) {
+        //     str = str + alphabet[numbers[i]];
+        // }
+        // console.log(str);
+
 
         // 2. Create a div in the app.component.html file and use interpolation to display the title variable from above.
 
