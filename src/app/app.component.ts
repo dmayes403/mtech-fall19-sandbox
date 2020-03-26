@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
         // 1. Sum the array below using *two* different ways
         // const arrOfNums = [1, 4, 7, 3, 8, 99, 3, 4, 55, 6, 33, 4, 123];
 
-        // 2. Create a component that uses the following template driven form elements below. Each element
+        // 2. In the app.component.html use the following template driven form elements below. Each element
         //     should be bound to a value in your typescript file. Have a button that when clicked
         //     displays each of the form values.
         //     - input
