@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import planets from './planets';
 
 @Component({
     selector: 'app-root',
@@ -19,16 +20,50 @@ export class AppComponent implements OnInit {
         // Not all problems can be solved with one line of code.
 
 
+        // FIREBASE DAY
+        // 1. Sum the array below using *two* different ways
+        // const arrOfNums = [1, 4, 7, 3, 8, 99, 3, 4, 55, 6, 33, 4, 123];
+
+        // 2. Create a component that uses the following template driven form elements below. Each element
+        //     should be bound to a value in your typescript file. Have a button that when clicked
+        //     displays each of the form values.
+        //     - input
+        //     - checkbox
+        //     - radio button
+        //     - slide toggle
+
+        // 3. Add a "select" and an "input" form element that can be used as a reactive form element. Subscribe to the value
+        //     changes and display the values in the console.
+
+
+
         // TEMPLATE DRIVEN FORMS DAY
         // 1. Go to https://swapi.co/ in the input type 'starships' and push the request button. Create an
         // interface that holds all the properties of a starship.
 
         // 2. Referencing the planet.ts file, display the name of every planet that appeared in the 6th Star Wars film.
+        planets.forEach(planet => {
+            planet.films.forEach(film => {
+                if (film.match(/\d/)[0] === '6') {
+                    console.log(planet.name);
+                }
+            });
+        });
 
         // 3. Given the evenOccurrnceArr variable below, find the first item that occurs an even number of times
         // in an array. Remember to handle multiple even-occurrence items and return the first one. Return null
         // if there are no even-occurrence items.
-        const evenOccurrnceArr = [ 1, 3, 3, 3, 2, 4, 4, 2, 5 , 7, 7];
+        const evenOccurrnceArr = [1, 3, 3, 3, 2, 4, 4, 2, 5, 7, 7];
+        const numbersObj = {};
+        // let firstEven;
+        // evenOccurrnceArr.forEach(num => {
+        //     if (!numbersObj[num]) {
+        //         numbersObj[num] = 1;
+        //     } else if (numbersObj[num]) {
+        //         numbersObj[num]++;
+        //     }
+        // });
+        // console.log(firstEven);
 
         // 4. Given the array of words below display if each word is a palindrome or not.
         const palindrome = ['Kayak', 'steve', 'toyota', 'rotator', 'No lemon, no melon', 'potato', 'Solo'];
