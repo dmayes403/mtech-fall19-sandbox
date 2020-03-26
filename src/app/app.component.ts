@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
 
         // FIREBASE DAY
         // 1. Sum the array below using *two* different ways
-        // const arrOfNums = [1, 4, 7, 3, 8, 99, 3, 4, 55, 6, 33, 4, 123];
+        const arrOfNums = [1, 4, 7, 3, 8, 99, 3, 4, 55, 6, 33, 4, 123];
 
         // 2. In the app.component.html use the following template driven form elements below. Each element
         //     should be bound to a value in your typescript file. Have a button that when clicked
