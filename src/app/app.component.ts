@@ -42,13 +42,13 @@ export class AppComponent implements OnInit {
         // interface that holds all the properties of a starship.
 
         // 2. Referencing the planet.ts file, display the name of every planet that appeared in the 6th Star Wars film.
-        planets.forEach(planet => {
-            planet.films.forEach(film => {
-                if (film.match(/\d/)[0] === '6') {
-                    console.log(planet.name);
-                }
-            });
-        });
+        // planets.forEach(planet => {
+        //     planet.films.forEach(film => {
+        //         if (film.match(/\d/)[0] === '6') {
+        //             console.log(planet.name);
+        //         }
+        //     });
+        // });
 
         // 3. Given the evenOccurrnceArr variable below, find the first item that occurs an even number of times
         // in an array. Remember to handle multiple even-occurrence items and return the first one. Return null
