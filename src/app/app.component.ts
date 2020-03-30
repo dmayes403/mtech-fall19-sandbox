@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import planets from './planets';
-import { FormControl } from '@angular/forms';
+import { FormControl, FormBuilder, FormGroup } from '@angular/forms';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
     selector: 'app-root',
@@ -21,18 +22,30 @@ export class AppComponent implements OnInit {
 
     lastName = new FormControl();
 
+    form: FormGroup;
+
+    constructor(
+        private fb: FormBuilder,
+        private db: AngularFirestore
+    ) {}
+
     ngOnInit(): void {
         // TOY PROBLEMS - Solve the problems below as effeciently as possible.
         // Not all problems can be solved with one line of code.
 
-        // FIREBASE LISTS DAY
-        // 1. Go to the firebase database that we created last time I taught. Add a collection called 'Users'. Create a single
-        // Document under that collection with the properties (add a value for each): firstName, lastName, phone, email, zip.
 
-        // 2. Comment out the code that's currently in the app.component.html file. Create a reactive form with inputs that
-        // are attached to a variable which has the same properties as the ones created in problem 1.
+        // FIREBASE LISTS DAY - Use the zoom chat to ask me any questions that you might be stuck on along the way.
 
-        // 3. After the user updates the inputs, save those changes to the document you originally created in problem 1.
+        // 1. Go to the firebase database that we created last time I taught. Add a collection called 'users'. Create a single
+        // document under that collection with the properties (add a value for each): firstName, lastName, phone, email, and zip.
+
+        // 2. Add your firebase config to the environment.ts file (DO NOT COMMIT THIS)
+
+        // 3. Comment out the code that's currently in the app.component.html file. Create a reactive form with inputs that
+        // will hold a value for each of the properties created in problem 1.
+
+        // 4. After the user updates the inputs, save those changes (button that can be clicked) to
+        // the document you originally created in problem 1.
 
 
 
@@ -194,5 +207,4 @@ export class AppComponent implements OnInit {
         console.log('first name: ' + this.firstName);
         console.log('isCool: ' + this.isCool);
     }
-
 }
