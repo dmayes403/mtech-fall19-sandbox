@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import planets from './planets';
+import { FormControl } from '@angular/forms';
 
 @Component({
     selector: 'app-root',
@@ -15,14 +16,38 @@ export class AppComponent implements OnInit {
     imgUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSzrAXk1k39T9k5i8Z81CYkBAMtZDIHMXptgXlLkY6a0L08Ixl';
     todaysDate = new Date();
 
+    firstName: string;
+    isCool: boolean;
+
+    lastName = new FormControl();
+
     ngOnInit(): void {
         // TOY PROBLEMS - Solve the problems below as effeciently as possible.
         // Not all problems can be solved with one line of code.
 
+        // FIREBASE LISTS DAY
+        // 1. Go to the firebase database that we created last time I taught. Add a collection called 'Users'. Create a single
+        // Document under that collection with the properties (add a value for each): firstName, lastName, phone, email, zip.
 
-        // FIREBASE DAY
+        // 2. Comment out the code that's currently in the app.component.html file. Create a reactive form with inputs that
+        // are attached to a variable which has the same properties as the ones created in problem 1.
+
+        // 3. After the user updates the inputs, save those changes to the document you originally created in problem 1.
+
+
+
+        // FIREBASE DOCUMENTS DAY
         // 1. Sum the array below using *two* different ways
-        const arrOfNums = [1, 4, 7, 3, 8, 99, 3, 4, 55, 6, 33, 4, 123];
+        // const arrOfNums = [1, 4, 7, 3, 8, 99, 3, 4, 55, 6, 33, 4, 123];
+        // let sum = 0;
+        // arrOfNums.forEach(num => {
+        //     sum += num;
+        // });
+        // console.log(sum);
+
+        // console.log(arrOfNums.reduce((a, b) => a + b));
+
+        // this.lastName.valueChanges.subscribe(value => console.log(value));
 
         // 2. In the app.component.html use the following template driven form elements below. Each element
         //     should be bound to a value in your typescript file. Have a button that when clicked
@@ -162,6 +187,12 @@ export class AppComponent implements OnInit {
         //    the original title back to the parent component to be displayed as the new title. You will need an event listener
         //    within the parent component to complete this.
 
+    }
+
+    seeValues() {
+        console.log('The values are: ');
+        console.log('first name: ' + this.firstName);
+        console.log('isCool: ' + this.isCool);
     }
 
 }
