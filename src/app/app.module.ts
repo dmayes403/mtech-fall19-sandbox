@@ -42,7 +42,7 @@ import { AngularFireModule } from '@angular/fire';
         MatCheckboxModule,
         MatSlideToggleModule,
         ReactiveFormsModule,
-        AngularFireModule.initializeApp(environment.firebase),
+        // AngularFireModule.initializeApp(environment.firebase),
         AngularFirestoreModule,
     ],
     providers: [],

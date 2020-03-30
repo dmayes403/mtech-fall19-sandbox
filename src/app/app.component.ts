@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
 
     constructor(
         private fb: FormBuilder,
-        private db: AngularFirestore
+        // private db: AngularFirestore
     ) {}
 
     ngOnInit(): void {
