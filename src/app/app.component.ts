@@ -1,8 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import planets from './planets';
-import { FormControl, FormBuilder, FormGroup } from '@angular/forms';
-import { AngularFirestore } from '@angular/fire/firestore';
-import { UserService } from './services/user.service';
 
 @Component({
     selector: 'app-root',
@@ -16,10 +12,7 @@ export class AppComponent implements OnInit {
 
     title = 'SandBox';
 
-    constructor(
-        private fb: FormBuilder,
-        private userService: UserService
-    ) {}
+    constructor() {}
 
     ngOnInit(): void {
         // TOY PROBLEMS - Solve the problems below as effeciently as possible.
@@ -36,7 +29,8 @@ export class AppComponent implements OnInit {
         // need to uncomment a couple of angularfire modules in the app.module.ts file for this to fully work.
 
         // 3. Use whichever form method you prefer (reactive/template driven) to save the user
-        // to a 'users' collection. If you have one that already exists, make sure that the pre-existing documents are deleted.
+        // to a 'users' collection. If you have one that already exists, make sure that the pre-existing documents are deleted
+        // or the properties of the users match our updated interface.
 
         // 4. Route to the users page after saving the user from #3.
 

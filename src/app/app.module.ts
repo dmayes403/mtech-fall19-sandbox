@@ -44,9 +44,9 @@ import { UserCreationComponent } from './components/user-creation/user-creation.
         MatButtonModule,
         MatCheckboxModule,
         MatSlideToggleModule,
-        ReactiveFormsModule,
+        // ReactiveFormsModule,
         // AngularFireModule.initializeApp(environment.firebase),
-        // AngularFirestoreModule,
+        AngularFirestoreModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
