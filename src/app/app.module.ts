@@ -21,15 +21,18 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire';
+import { UsersComponent } from './components/users/users.component';
+import { UserCreationComponent } from './components/user-creation/user-creation.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        UsersComponent,
+        UserCreationComponent
     ],
     imports: [
         BrowserModule,
-        // AppRoutingModule
-        RouterModule.forRoot([]),
+        AppRoutingModule,
         BrowserAnimationsModule,
         MatToolbarModule,
         HttpClientModule,
@@ -42,8 +45,8 @@ import { AngularFireModule } from '@angular/fire';
         MatCheckboxModule,
         MatSlideToggleModule,
         ReactiveFormsModule,
-        AngularFireModule.initializeApp(environment.firebase),
-        AngularFirestoreModule,
+        // AngularFireModule.initializeApp(environment.firebase),
+        // AngularFirestoreModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
