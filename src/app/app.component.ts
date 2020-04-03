@@ -19,23 +19,17 @@ export class AppComponent implements OnInit {
         // Not all problems can be solved with one line of code.
 
 
-        // ANIMATIONS DAY
-        // ** Note - the User interface has been updated to reflect the required properties.
+        // IONIC BASICS AND NAVIGATION DAY
+        // 1. Add your firebase config from Wednesday's class to the environment.ts file. (DO NOT COMMIT THIS).
 
-        // 1. Create separate routes for the users and user-creation component that can be accessed through the mat-toolbar
-        // in the app.component.html file. The user-creation route doesn't need to be dynamic, we won't be updating any users.
+        // 2. A new property has been added to the User interface called 'show'. When the users component
+        // first pulls in the list of users from your firsbase collection (these should exist from Wednesday, if not,
+        // go ahead and save a few using the user-creation component), set each 'show' property to true.
 
-        // 2. Add your firebase config from a previous day to the enviornment.ts file (DO NOT COMMIT THIS). You will
-        // need to uncomment a couple of angularfire modules in the app.module.ts file for this to fully work.
+        // 3. In the users.component.html file, when the trash icon is clicked use a structural directive
+        // to remove the whole card from the view.
 
-        // 3. Use whichever form method you prefer (reactive/template driven) to save the user
-        // to a 'users' collection. If you have one that already exists, make sure that the pre-existing documents are deleted
-        // or the properties of the users match our updated interface.
-
-        // 4. Route to the users page after saving the user from #3.
-
-        // 5. Display all of the users from your 'users' collection in the user component.
-
-        // 6. Use the date pipe to get the creation date to look like 'Wednesday, April 2, 2020'
+        // 4. Add an animation to the users.component.ts file to help the user cards fade in and out upon
+        // entering and leaving the DOM.
     }
 }

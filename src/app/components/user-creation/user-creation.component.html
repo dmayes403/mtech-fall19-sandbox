@@ -1,25 +1,25 @@
 <div style="padding: 24px;">
     <div style="font-size: 1.5em">User Creation</div>
 
-    <div style="display: flex; flex-direction: column; max-width: 200px;">
+    <div style="display: flex; flex-direction: column; max-width: 200px;" [formGroup]="form">
         <mat-form-field>
-            <input matInput type="text" placeholder="First Name">
+            <input matInput type="text" placeholder="First Name" formControlName="firstName">
         </mat-form-field>
 
         <mat-form-field>
-            <input matInput type="text" placeholder="Last Name">
+            <input matInput type="text" placeholder="Last Name" formControlName="lastName">
         </mat-form-field>
 
         <mat-form-field>
-            <input matInput type="text" placeholder="Email">
+            <input matInput type="text" placeholder="Email" formControlName="email">
         </mat-form-field>
 
         <mat-form-field>
-            <input matInput type="text" placeholder="Favorite Color">
+            <input matInput type="text" placeholder="Favorite Color" formControlName="favoriteColor">
         </mat-form-field>
 
         <div>Creation Date: {{todaysDate}}</div>
 
-        <button mat-raised-button color="primary" style="margin-top: 16px;">Save</button>
+        <button mat-raised-button color="primary" style="margin-top: 16px;" (click)="saveUser()">Save</button>
     </div>
 </div>

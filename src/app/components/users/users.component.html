@@ -1,1 +1,16 @@
-<p>Users Works!</p>
+<div style="padding: 16px;">
+    <div *ngFor="let user of users" style="margin-bottom: 16px;">
+        <mat-card>
+            <mat-card-title>{{user?.firstName}} {{user.lastName}}</mat-card-title>
+            <mat-card-content style="display: flex; justify-content: space-between">
+                <div>
+                    <div>{{user.email}}</div>
+                    <div>{{user.favoriteColor}}</div>
+                    <div>{{user.creationDate}}</div>
+                    <div>{{user.creationDate.seconds * 1000 | date: 'fullDate'}}</div>
+                </div>
+                <button mat-icon-button><mat-icon>delete</mat-icon></button>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

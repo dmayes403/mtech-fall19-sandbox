@@ -16,6 +16,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatIconModule } from '@angular/material/icon';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ReactiveFormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
@@ -28,7 +29,7 @@ import { UserCreationComponent } from './components/user-creation/user-creation.
     declarations: [
         AppComponent,
         UsersComponent,
-        UserCreationComponent
+        UserCreationComponent,
     ],
     imports: [
         BrowserModule,
@@ -44,9 +45,10 @@ import { UserCreationComponent } from './components/user-creation/user-creation.
         MatButtonModule,
         MatCheckboxModule,
         MatSlideToggleModule,
-        // ReactiveFormsModule,
-        // AngularFireModule.initializeApp(environment.firebase),
+        ReactiveFormsModule,
+        AngularFireModule.initializeApp(environment.firebase),
         AngularFirestoreModule,
+        MatIconModule
     ],
     providers: [],
     bootstrap: [AppComponent]
