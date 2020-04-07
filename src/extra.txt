@@ -1,3 +1,17 @@
+// IONIC BASICS AND NAVIGATION DAY
+// 1. Add your firebase config from Wednesday's class to the environment.ts file. (DO NOT COMMIT THIS).
+
+// 2. A new property has been added to the User interface called 'show'. When the users component
+// first pulls in the list of users from your firsbase collection (these should exist from Wednesday, if not,
+// go ahead and save a few using the user-creation component), set each 'show' property to true.
+
+// 3. In the users.component.html file, when the trash icon is clicked use a structural directive
+// to remove the whole card from the view.
+
+// 4. Add an animation to the users.component.ts file to help the user cards fade in and out upon
+// entering and leaving the DOM.
+
+
 // ANIMATIONS DAY
 // ** Note - the User interface has been updated to reflect the required properties.
 

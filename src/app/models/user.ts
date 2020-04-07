@@ -4,5 +4,5 @@ export interface User {
     email: string;
     favoriteColor: string;
     creationDate: Date;
-    show: true;
+    show: boolean;
 }

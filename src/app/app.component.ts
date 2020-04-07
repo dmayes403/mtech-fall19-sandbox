@@ -19,17 +19,17 @@ export class AppComponent implements OnInit {
         // Not all problems can be solved with one line of code.
 
 
-        // IONIC BASICS AND NAVIGATION DAY
-        // 1. Add your firebase config from Wednesday's class to the environment.ts file. (DO NOT COMMIT THIS).
-
-        // 2. A new property has been added to the User interface called 'show'. When the users component
-        // first pulls in the list of users from your firsbase collection (these should exist from Wednesday, if not,
-        // go ahead and save a few using the user-creation component), set each 'show' property to true.
-
-        // 3. In the users.component.html file, when the trash icon is clicked use a structural directive
-        // to remove the whole card from the view.
-
-        // 4. Add an animation to the users.component.ts file to help the user cards fade in and out upon
-        // entering and leaving the DOM.
+        // IONIC COMPONENTS DAY
+        // 1. Start a new ionic app with the sidemenu template and an Angular "type".
+        // Refer to https://github.com/MountainlandWEB/angular/blob/master/lessons/day-20-ionic-basics-and-navigation/unit-01-ionic-basics-and-navigation.md
+        // for an example on how to start a project with a side menu if you forgot how.
+        // 2. Generate 2 pages - CharacterList and CharacterDetail
+        // 3. Make the 'character-list' route the new landing page when going to localhost://8100
+        // 4. Make each tool-bar of your new pages blue
+        // 5. Put the character.ts file from the #classroom channel in your assets folder
+        // 6. Create a variable in your CharacterList component to store the character data
+        // 7. Display each of those characters in the CharacterList component
+        // 8. Create the ability to click on a character and then route to the CharacterDetail
+        //    page to display the detail of the character.
     }
 }
