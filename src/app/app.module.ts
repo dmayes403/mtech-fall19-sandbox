@@ -24,7 +24,6 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire';
 import { UsersComponent } from './components/users/users.component';
 import { UserCreationComponent } from './components/user-creation/user-creation.component';
-import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
     declarations: [
@@ -50,7 +49,6 @@ import {MatDialogModule} from '@angular/material/dialog';
         AngularFireModule.initializeApp(environment.firebase),
         AngularFirestoreModule,
         MatIconModule,
-        MatDialogModule
     ],
     providers: [],
     bootstrap: [AppComponent]

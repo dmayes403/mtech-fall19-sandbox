@@ -27,7 +27,6 @@ export class UsersComponent implements OnInit {
 
   constructor(
     private userService: UserService,
-    public dialog: MatDialog
   ) { }
 
   ngOnInit(): void {
