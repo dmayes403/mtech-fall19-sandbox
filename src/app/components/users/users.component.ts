@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { UserService } from 'src/app/services/user.service';
 import { User } from 'src/app/models/user';
 import { trigger, transition, style, animate } from '@angular/animations';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-users',
@@ -26,6 +27,7 @@ export class UsersComponent implements OnInit {
 
   constructor(
     private userService: UserService,
+    public dialog: MatDialog
   ) { }
 
   ngOnInit(): void {
@@ -46,5 +48,4 @@ export class UsersComponent implements OnInit {
     const selected = this.users.filter(user => date === user.creationDate);
     selected[0].show = false;
   }
-
 }

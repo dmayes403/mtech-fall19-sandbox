@@ -9,7 +9,6 @@
                     <div>{{user.creationDate}}</div>
                     <div>{{user.creationDate.seconds * 1000 | date: 'fullDate'}}</div>
                 </div>
-                <!-- <button mat-icon-button (click)="deleteUser(user.creationDate)"><mat-icon>delete</mat-icon></button> -->
                 <button mat-icon-button (click)="user.show = false"><mat-icon>delete</mat-icon></button>
             </mat-card-content>
         </mat-card>
